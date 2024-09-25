@@ -7,10 +7,19 @@ public class PemilihanBilangan24 {
         System.out.print("Masukkan Sebuah Angka: ");
         int angka = input.nextInt();
 
-        if(angka % 2 == 0) {
-            System.out.printf("Angka %s Termasuk Bilangan Genap", angka);
-        } else {
-            System.out.printf("Angka %s Termasuk Bilangan Ganjil", angka);
-        }
+        /*
+         * if else
+        */
+        // if(angka % 2 == 0) {
+        //     System.out.printf("Angka %s Termasuk Bilangan Genap", angka);
+        // } else {
+        //     System.out.printf("Angka %s Termasuk Bilangan Ganjil", angka);
+        // }
+
+        /*
+         * Tenary
+        */
+        String jawaban = angka % 2 == 0 ? "Genap" : "Ganjil";
+        System.out.printf("Angka %s Termasuk Bilangan %s", angka, jawaban);
     }
 }
